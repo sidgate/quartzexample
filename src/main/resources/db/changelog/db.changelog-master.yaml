@@ -1,0 +1,17 @@
+databaseChangeLog:
+  - changeSet:
+      id:  empty-example
+      author:  liquibase-docs
+      changes:
+        - createTable:
+            columns:
+              - column:
+                  name:  id
+                  type:  bigint
+              - column:
+                  name:  name
+                  type:  varchar(50)
+              - column:
+                  name:  scheduletime
+                  type:  timestamp
+            tableName:  task
